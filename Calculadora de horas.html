@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours Tracker</title>
+</head>
+<body>
+    <h1>Work Hours Tracker</h1>
+    <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+    </div>
+    <div>
+        <label for="start">Start Time:</label>
+        <input type="time" id="start">
+    </div>
+    <div>
+        <label for="lunchStart">Lunch Start Time:</label>
+        <input type="time" id="lunchStart">
+    </div>
+    <div>
+        <label for="lunchEnd">Lunch End Time:</label>
+        <input type="time" id="lunchEnd">
+    </div>
+    <div>
+        <label for="end">End Time:</label>
+        <input type="time" id="end">
+    </div>
+    <button onclick="calculateHours()">Calculate Hours</button>
+    <p id="result"></p>
+    <h2>Cumulative Balance</h2>
+    <p id="cumulativeBalance">0 hours</p>
+    <h2>Daily Records</h2>
+    <div id="records"></div>
+</body>
+<script src="script.js"></script>
+</html>
